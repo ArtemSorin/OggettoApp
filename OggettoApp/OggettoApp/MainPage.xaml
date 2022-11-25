@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="OggettoApp.MainPage"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+             SelectedTabColor="Black"
+             UnselectedTabColor="Gray"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage IconImageSource="home.png">
+        <StackLayout Margin="20">
+            <ScrollView>
+                <StackLayout>
+                    <Grid Margin="0, 20, 0, 0" HeightRequest="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <ImageButton CornerRadius="50" Grid.Column="0" BackgroundColor="#ffdd2c"></ImageButton>
+                        <Label x:Name="avaimage" VerticalOptions="Center" Text="Алина Гельдаш" FontSize="Large" FontAttributes="Bold" TextColor="Black" Grid.Column="1"></Label>
+                    </Grid>
+                    <Label Margin="0, 20, 0, 0" Text="Избранное" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                    <ScrollView Orientation="Horizontal" Margin="0, 10, 0, 0">
+                        <Grid x:Name="stacbtn" HeightRequest="220" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="190" />
+                            </Grid.RowDefinitions>
+                            <Frame x:Name="frame1" CornerRadius="30" Grid.Column="0" >
+                                <ImageButton x:Name="button_lesson1" Source="lesson1.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame x:Name="frame2" CornerRadius="30" Grid.Column="1">
+                                <ImageButton x:Name="button_lesson2" Source="lesson2.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame x:Name="frame3" CornerRadius="30" Grid.Column="2">
+                                <ImageButton x:Name="button_lesson3" Source="lesson3.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame x:Name="frame4" CornerRadius="30" Grid.Column="3">
+                                <ImageButton x:Name="button_lesson4" Source="lesson4.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame x:Name="frame5" CornerRadius="30" Grid.Column="4">
+                                <ImageButton x:Name="button_lesson5" Source="lesson5.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame x:Name="frame6" CornerRadius="30"  Grid.Column="5">
+                                <ImageButton x:Name="button_lesson6" Source="lesson6.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                        </Grid>
+                    </ScrollView>
+                    <Label Margin="0, 20, 0, 0" Text="Игра" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Button x:Name="game_button" BackgroundColor="#ffdd2c" Margin="20, 20, 20, 20" HeightRequest="60" Text="Пройти игру на знание коллег" TextColor="Black" FontAttributes="Bold" CornerRadius="20"></Button>
+                    <Button BackgroundColor="White" Margin="20, 0, 20, 20" HeightRequest="60" Text="Пройти игру на знание коллег" TextColor="Gray" FontAttributes="Bold" CornerRadius="20"></Button>
+                    <Label Margin="0, 20, 0, 0" Text="Команда" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100" />
+                        </Grid.RowDefinitions>
+                        <Button Grid.Column="0" Text="Познакомиться с командой" BackgroundColor="#ffdd2c" CornerRadius="20"></Button>
+                        <Button Grid.Column="1" Text="Расскажи о себе" FontAttributes="Bold" BackgroundColor="#ffdd2c" CornerRadius="20"></Button>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage IconImageSource="follower.png">
+        <StackLayout>
+            <Frame Padding="24" BackgroundColor="#ffdd2c" CornerRadius="50" Margin="0, -40, 0, 0" HeightRequest="350">
+                <StackLayout>
+                    <Frame Margin="0, 60, 0, 0" CornerRadius="10"></Frame>
+                    <ScrollView Orientation="Horizontal" Margin="0, 10, 0, 0">
+                        <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                                <ColumnDefinition Width="140" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="190" />
+                            </Grid.RowDefinitions>
+                            <Frame CornerRadius="30" Grid.Column="0" >
+                                <ImageButton CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame CornerRadius="30" Grid.Column="1">
+                                <ImageButton Source="lesson2.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame CornerRadius="30" Grid.Column="2">
+                                <ImageButton  Source="lesson3.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame CornerRadius="30" Grid.Column="3">
+                                <ImageButton  Source="lesson4.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame CornerRadius="30" Grid.Column="4">
+                                <ImageButton  CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                            <Frame  CornerRadius="30"  Grid.Column="5">
+                                <ImageButton Source="lesson6.png" CornerRadius="30" Margin="-15"></ImageButton>
+                            </Frame>
+                        </Grid>
+                    </ScrollView>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage IconImageSource="menu.png">
+        <StackLayout Margin="20">
+            <Label Margin="0, 20, 0, 20" Text="Сервисы" FontSize="Title" FontAttributes="Bold" TextColor="Black"></Label>
+            <ScrollView>
+                <StackLayout>
+                    <Frame BackgroundColor="#ffdd2c" CornerRadius="20" HeightRequest="50">
+                        <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <ImageButton Source="gamecontroller.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <Label Text="Oggy game" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame BackgroundColor="#ffdd2c" CornerRadius="20" HeightRequest="50">
+                        <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <ImageButton Source="sunumbrella.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <Label Text="Отпуска" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame BackgroundColor="#ffdd2c" CornerRadius="20" HeightRequest="50">
+                        <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <ImageButton Source="pharmacy.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <Label Text="Больничный" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame BackgroundColor="#ffdd2c" CornerRadius="20" HeightRequest="50">
+                        <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <ImageButton Source="puzzle.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <Label Text="Адаптация" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame BackgroundColor="#ffdd2c" CornerRadius="20" HeightRequest="50">
+                        <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <ImageButton Source="beach.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <Label Text="Мероприятия" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame BackgroundColor="#ffdd2c" CornerRadius="20" HeightRequest="50">
+                        <Grid HeightRequest="200" Margin="10, 10, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <ImageButton Source="document.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <Label Text="Справки" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage IconImageSource="find.png">
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+            <Label FontSize="16" Padding="30,24,30,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Learn more at "/>
+                            <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage IconImageSource="profile.png">
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+            <Label FontSize="16" Padding="30,24,30,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Learn more at "/>
+                            <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
