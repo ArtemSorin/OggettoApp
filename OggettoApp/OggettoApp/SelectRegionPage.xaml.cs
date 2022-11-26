@@ -16,7 +16,7 @@ namespace OggettoApp
         {
             InitializeComponent();
 
-            back_btn.Clicked += (s, e) => Navigation.PopAsync();
+            //back_btn.Clicked += (s, e) => Navigation.PopAsync();
 
             btn1.Clicked += (s, e) => Navigation.PushAsync(new GamePage());
         }

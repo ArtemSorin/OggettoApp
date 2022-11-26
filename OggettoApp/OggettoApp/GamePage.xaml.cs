@@ -25,13 +25,13 @@ namespace OggettoApp
         public List<question> initialQuestLite()
         {
             List<question> questions = new List<question>();
-            questions.Add(new question() { image = "people1.png", var1 = "Россия", var2 = "Украина", var3 = "Белоруссия", var4="", answer = 1 });
-            questions.Add(new question() { image = "people2.png", var1 = "Южная Корея", var2 = "Сингапур", var3 = "Япония", var4 = "", answer = 3 });
-            questions.Add(new question() { image = "people3.png", var1 = "Австрия", var2 = "Германия", var3 = "Польша", var4 = "", answer = 2 });
-            questions.Add(new question() { image = "people4.png", var1 = "Франция", var2 = "Италия", var3 = "Испания", var4 = "", answer = 1 });
-            questions.Add(new question() { image = "people5.png", var1 = "Канада", var2 = "Австралия", var3 = "Малазия", var4 = "", answer = 2 });
-            questions.Add(new question() { image = "people6.png", var1 = "Португалия", var2 = "Ирландия", var3 = "Великобритания", var4 = "", answer = 3 });
-            questions.Add(new question() { image = "people7.png", var1 = "Австрия", var2 = "Германия", var3 = "Польша", var4 = "", answer = 2 });
+            questions.Add(new question() { image = "people1.png", var1 = "Андрей Андреев - Backend-разработчик", var2 = "Николай Брусенцов - Дизайнер", var3 = "Михаил Донской - Тестировщик", var4= "Александр Назаров - QA-инженер", answer = 1 });
+            questions.Add(new question() { image = "people2.png", var1 = "Лидия Ершова - Системный аналитик", var2 = "Ирина Маркова - Программист Java", var3 = "Анастасия Петрова - Мобильный разработчик", var4 = "Елена Герасимова - 3D-дизайнер", answer = 3 });
+            questions.Add(new question() { image = "people3.png", var1 = "Павел Дуров - Full-Stack-разработчик", var2 = "Евгений Ландис - UX/UI-дизайнер", var3 = "Роман Шишкин - Data Scientist", var4 = "Дмитрий Цой - Администратор БД", answer = 2 });
+            questions.Add(new question() { image = "people4.png", var1 = "Ярослав Левенцов - HR-менеджер", var2 = "Леонид  Лавров - Quant developer", var3 = "Давид Лесной - HR-менеджер", var4 = "Максим Пан - PR-менеджер", answer = 1 });
+            questions.Add(new question() { image = "people5.png", var1 = "Алексей Пажитнов - Разработчик на C++", var2 = "Святослав Пестов - Системный Администратор", var3 = "Никита Александров - Linux-Адмнистратор", var4 = "Аркадий Сысоев - Тех-лид", answer = 2 });
+            questions.Add(new question() { image = "people6.png", var1 = "Валентин Скляров - Архитектор VR", var2 = "Сергей Дроздов - iOS-разработчик", var3 = "Владимир Степанов - Android-разработчик", var4 = "Артём Шалыто - Game-дизайнер", answer = 3 });
+            questions.Add(new question() { image = "people7.png", var1 = "Алина Щепкина - Frontend-разработчик", var2 = "Ярослава Нефедова - Web-дизайнер", var3 = "Лия Фомина - Корпоративный архитектор", var4 = "Александра Разборова - Архитектор БД", answer = 2 });
             questions.Add(new question() { image = "people8.png", var1 = "Франция", var2 = "Италия", var3 = "Испания", var4 = "", answer = 1 });
             questions.Add(new question() { image = "people9.png", var1 = "Канада", var2 = "Австралия", var3 = "Малазия", var4 = "", answer = 2 });
             questions.Add(new question() { image = "people10.png", var1 = "Португалия", var2 = "Ирландия", var3 = "Великобритания", var4 = "", answer = 3 });
