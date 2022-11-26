@@ -10,7 +10,7 @@ namespace OggettoApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new RegistrationPage());
         }
 
         protected override void OnStart()

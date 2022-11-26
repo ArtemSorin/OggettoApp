@@ -14,7 +14,7 @@ namespace OggettoApp
         {
             InitializeComponent();
 
-            game_button.Clicked += (s, e) => Navigation.PushAsync(new GamePage());
+            game_button.Clicked += (s, e) => Navigation.PushAsync(new SelectRegionPage());
         }
     }
 }

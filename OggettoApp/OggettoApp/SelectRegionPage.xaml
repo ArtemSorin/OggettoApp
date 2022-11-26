@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OggettoApp.SelectRegionPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Margin="20">
+        <ImageButton x:Name="back_btn" HeightRequest="50" Source="left.png" WidthRequest="50" Margin="0, 20, 300, 0" CornerRadius="100"  BackgroundColor="#ffdd2c"></ImageButton>
+        <Label Text="Выбор региона" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+        <Button x:Name="btn1" Margin="20" Text="Таганрог" FontAttributes="Bold" FontSize="Subtitle" HeightRequest="80" CornerRadius="20" BackgroundColor="#ffdd2c" ></Button>
+        <Button x:Name="btn2" Margin="20, 0, 20, 20" Text="Ростов-на-Дону" FontAttributes="Bold" FontSize="Subtitle" HeightRequest="80" CornerRadius="20" BackgroundColor="#ffdd2c" ></Button>
+        <Button x:Name="btn3" Margin="20, 0, 20, 20" Text="All in" FontAttributes="Bold" FontSize="Subtitle" HeightRequest="80" CornerRadius="20" BackgroundColor="#ffdd2c" ></Button>
+    </StackLayout>
+</ContentPage>
