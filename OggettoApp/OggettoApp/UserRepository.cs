@@ -10,7 +10,7 @@ namespace OggettoApp
 {
     public class UserRepository
     {
-        FirebaseClient firebaseClient = new FirebaseClient("https://blockchain-basics-d5943-default-rtdb.europe-west1.firebasedatabase.app");
+        FirebaseClient firebaseClient = new FirebaseClient("https://oggettoapp-default-rtdb.europe-west1.firebasedatabase.app");
 
         public async Task<bool> SaveUser(User user)
         {
@@ -28,8 +28,13 @@ namespace OggettoApp
         {
             return (await firebaseClient.Child(nameof(User)).OnceAsync<User>()).Select(item => new User
             {
-                UserName = item.Object.UserName,
-                UserPassword = item.Object.UserPassword,
+                Login = item.Object.Login,
+                Password = item.Object.Password,
+                Number = item.Object.Number,
+                Email = item.Object.Email,
+                Adress = item.Object.Adress,
+                WorkAdress = item.Object.WorkAdress,
+                achivements = item.Object.achivements,
                 Id = item.Key,
             }).ToList();
         }

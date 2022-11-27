@@ -19,7 +19,7 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <ImageButton CornerRadius="50" Source="alina.png" Grid.Column="0" BackgroundColor="#ffdd2c"></ImageButton>
+                        <ImageButton CornerRadius="50" Source="alina.png" Grid.Column="0" BackgroundColor="#ffdd2c" Aspect="AspectFill"></ImageButton>
                         <Label x:Name="avaimage" VerticalOptions="Center" Text="Алина" FontSize="Large" FontAttributes="Bold" TextColor="Black" Grid.Column="1"></Label>
                     </Grid>
                     <Label Margin="0, 20, 0, 0" Text="Интересное" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
@@ -30,28 +30,27 @@
                                 <ColumnDefinition Width="122" />
                                 <ColumnDefinition Width="122" />
                                 <ColumnDefinition Width="122" />
-                                <ColumnDefinition Width="122" />
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="140" />
                             </Grid.RowDefinitions>
                             <Frame x:Name="frame1" CornerRadius="20" Margin="0, 0, 10, 0" Grid.Column="0" >
-                                <ImageButton x:Name="button_lesson1" Source="story2.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
+                                <ImageButton x:Name="button_web1" Source="story2.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
                             </Frame>
                             <Frame x:Name="frame2" CornerRadius="20" Margin="0, 0, 10, 0" Grid.Column="1">
-                                <ImageButton x:Name="button_lesson6" Source="story1.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
+                                <ImageButton x:Name="button_web2" Source="story1.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
                             </Frame>
                             <Frame x:Name="frame3" CornerRadius="20" Margin="0, 0, 10, 0" Grid.Column="2">
-                                <ImageButton x:Name="button_lesson3" Source="story4.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
+                                <ImageButton x:Name="button_web3" Source="story4.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
                             </Frame>
                             <Frame x:Name="frame4" CornerRadius="20" Margin="0, 0, 10, 0" Grid.Column="3">
-                                <ImageButton x:Name="button_lesson4" Source="story5.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
+                                <ImageButton x:Name="button_web4" Source="story5.png" CornerRadius="20" Margin="-20" Aspect="AspectFill"></ImageButton>
                             </Frame>
                         </Grid>
                     </ScrollView>
                     <Label Margin="0, 20, 0, 0" Text="Игра" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
-                    <Button x:Name="game_button" BackgroundColor="White" Margin="0, 20, 0, 20" HeightRequest="60" Text="Пройти игру на знание коллег" FontSize="17" TextColor="Black" FontAttributes="Bold" CornerRadius="20"></Button>
-                    <Button BackgroundColor="White" Margin="0, 0, 0, 20" HeightRequest="60" Text="Достижения" TextColor="Black" FontAttributes="Bold" FontSize="17" CornerRadius="20"></Button>
+                    <Button x:Name="game_button" BackgroundColor="White" Margin="0, 20, 0, 20" HeightRequest="60" Text="Пройти игру на знание коллег" FontSize="17" TextTransform="None" TextColor="Black" FontAttributes="Bold" CornerRadius="20"></Button>
+                    <Button x:Name="achivement" BackgroundColor="White" Margin="0, 0, 0, 20" HeightRequest="60" Text="Достижения" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="17" CornerRadius="20"></Button>
                     <Label Margin="0, 20, 0, 0" Text="Команда" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
                     <Grid HeightRequest="200" Margin="0, 10, 0, 0">
                         <Grid.ColumnDefinitions>
@@ -61,8 +60,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="100" />
                         </Grid.RowDefinitions>
-                        <Button Grid.Column="0" Text="Познакомиться с командой" BackgroundColor="#ffdd2c" CornerRadius="20"></Button>
-                        <Button Grid.Column="1" Text="Расскажи о себе" FontAttributes="Bold" BackgroundColor="#ffdd2c" CornerRadius="20"></Button>
+                        <Button Grid.Column="0" Text="Познакомиться с командой" TextTransform="None" FontSize="17" FontAttributes="Bold" BackgroundColor="#ffdd2c" CornerRadius="20"></Button>
+                        <Button Grid.Column="1" Text="Расскажи о себе" TextTransform="None" FontSize="17" FontAttributes="Bold" BackgroundColor="#ffdd2c" CornerRadius="20"></Button>
                     </Grid>
                 </StackLayout>
             </ScrollView>
@@ -89,23 +88,23 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="168" />
                             </Grid.RowDefinitions>
-                            <Frame CornerRadius="20" Grid.Column="0" >
-                                <ImageButton CornerRadius="20" Source="dude1.png" Margin="-25"></ImageButton>
+                            <Frame CornerRadius="20" Grid.Column="0">
+                                <ImageButton CornerRadius="20" BackgroundColor="#ffdd2c" Source="dude1.png" Margin="-25"></ImageButton>
                             </Frame>
                             <Frame CornerRadius="20" Grid.Column="1">
-                                <ImageButton CornerRadius="20" Source="dude2.png" Margin="-25"></ImageButton>
+                                <ImageButton CornerRadius="20" BackgroundColor="#ffdd2c" Source="dude2.png" Margin="-25"></ImageButton>
                             </Frame>
                             <Frame CornerRadius="20" Grid.Column="2">
-                                <ImageButton CornerRadius="20" Source="dude3.png" Margin="-25"></ImageButton>
+                                <ImageButton CornerRadius="20" BackgroundColor="#ffdd2c" Source="dude3.png" Margin="-25"></ImageButton>
                             </Frame>
                             <Frame CornerRadius="20" Grid.Column="3">
-                                <ImageButton  CornerRadius="20" Source="dude4.png" Margin="-25"></ImageButton>
+                                <ImageButton  CornerRadius="20" BackgroundColor="#ffdd2c" Source="dude4.png" Margin="-25"></ImageButton>
                             </Frame>
                             <Frame CornerRadius="20" Grid.Column="4">
-                                <ImageButton CornerRadius="20" Source="dude5.png" Margin="-25"></ImageButton>
+                                <ImageButton CornerRadius="20" BackgroundColor="#ffdd2c" Source="dude5.png" Margin="-25"></ImageButton>
                             </Frame>
                             <Frame  CornerRadius="20"  Grid.Column="5">
-                                <ImageButton CornerRadius="20" Source="dude6.png" Margin="-25"></ImageButton>
+                                <ImageButton CornerRadius="20" BackgroundColor="#ffdd2c" Source="dude6.png" Margin="-25"></ImageButton>
                             </Frame>
                         </Grid>
                     </ScrollView>
@@ -180,7 +179,7 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="50" />
                             </Grid.RowDefinitions>
-                            <ImageButton Source="gamecontroller.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <ImageButton x:Name="game_btn" Source="gamecontroller.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
                             <Label Text="Oggy game" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="24" FontAttributes="Bold" TextColor="Black"></Label>
                         </Grid>
                     </Frame>
@@ -206,7 +205,7 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="50" />
                             </Grid.RowDefinitions>
-                            <ImageButton Source="pharmacy.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <ImageButton x:Name="medical" Source="pharmacy.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
                             <Label Text="Больничный" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="24" FontAttributes="Bold" TextColor="Black"></Label>
                         </Grid>
                     </Frame>
@@ -219,7 +218,7 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="50" />
                             </Grid.RowDefinitions>
-                            <ImageButton Source="puzzle.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <ImageButton x:Name="adaptation" Source="puzzle.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
                             <Label Text="Адаптация" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="24" FontAttributes="Bold" TextColor="Black"></Label>
                         </Grid>
                     </Frame>
@@ -245,7 +244,7 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="50" />
                             </Grid.RowDefinitions>
-                            <ImageButton Source="document.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
+                            <ImageButton x:Name="references" Source="document.png" BackgroundColor="#ffdd2c" Margin="0, -10, 0, 0"></ImageButton>
                             <Label Text="Справки" Margin="10, 0, 0, 0" Grid.Column="1" FontSize="24" FontAttributes="Bold" TextColor="Black"></Label>
                         </Grid>
                     </Frame>
@@ -278,71 +277,132 @@
                                 <ColumnDefinition Width="150" />
                                 <ColumnDefinition Width="150" />
                                 <ColumnDefinition Width="150" />
-                                <ColumnDefinition Width="150" />
-                                <ColumnDefinition Width="150" />
-                                <ColumnDefinition Width="150" />
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="50" />
                             </Grid.RowDefinitions>
-                            <Button x:Name="base_btn1" Grid.Column="0" Margin="10, 0, 0, 0" BackgroundColor="#ffdd2c" Text="Работа" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" CornerRadius="10"></Button>
-                            <Button x:Name="base_btn2" Grid.Column="1" Margin="10, 0, 0, 0" BackgroundColor="#ffdd2c" Text="Организация" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" CornerRadius="10"></Button>
-                            <Button x:Name="base_btn3" Grid.Column="2" Margin="10, 0, 0, 0" BackgroundColor="#ffdd2c" Text="Полезно" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" CornerRadius="10"></Button>
+                            <Button x:Name="base_btn1" Grid.Column="0" Margin="10, 0, 0, 0" BackgroundColor="#ffdd2c" Text="Работа" TextTransform="None" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" CornerRadius="10"></Button>
+                            <Button x:Name="base_btn2" Grid.Column="1" Margin="10, 0, 0, 0" BackgroundColor="#ffdd2c" Text="Организация" TextTransform="None" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" CornerRadius="10"></Button>
+                            <Button x:Name="base_btn3" Grid.Column="2" Margin="10, 0, 0, 0" BackgroundColor="#ffdd2c" Text="Полезно" TextTransform="None" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold" CornerRadius="10"></Button>
                         </Grid>
                     </ScrollView>
-                    <Frame Margin="10" HeightRequest="30" CornerRadius="10">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <ImageButton Source="clock.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
-                            <Label x:Name="phone_numbe" Margin="10, 3, 0, 0" Text="Распорядок дня" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
-                        </Grid>
-                    </Frame>
-                    <Frame Margin="10, 0, 10, 0" HeightRequest="30" CornerRadius="10">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <ImageButton Source="coffee.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
-                            <Label x:Name="mai" Margin="10, 3, 0, 0" Text="Где можно работать" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
-                        </Grid>
-                    </Frame>
-                    <Frame Margin="10, 10, 10, 0" HeightRequest="30" CornerRadius="10">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <ImageButton Source="message.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
-                            <Label x:Name="addres" Margin="10, 3, 0, 0" Text="Коммуникация" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
-                        </Grid>
-                    </Frame>
-                    <Frame Margin="10, 10, 10, 10" HeightRequest="30" CornerRadius="10">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <Image Source="book.png"></Image>
-                            <ImageButton Source="gitlab.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
-                            <Label x:Name="wok" Margin="10, 3, 0, 0" Text="Приём проектов" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
-                        </Grid>
-                    </Frame>
+                    <Grid>
+                        <Frame x:Name="framegl1" HasShadow="False" CornerRadius="20">
+                            <StackLayout>
+                                <Frame Margin="10" HeightRequest="30" CornerRadius="10">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="clock.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
+                                        <Label x:Name="phone_numbe" Margin="10, 3, 0, 0" Text="Распорядок дня" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
+                                    </Grid>
+                                </Frame>
+                                <Frame Margin="10, 0, 10, 0" HeightRequest="30" CornerRadius="10">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="coffee.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
+                                        <Label x:Name="mai" Margin="10, 3, 0, 0" Text="Где можно работать" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
+                                    </Grid>
+                                </Frame>
+                                <Frame Margin="10, 10, 10, 0" HeightRequest="30" CornerRadius="10">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <ImageButton Source="message.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
+                                        <Label x:Name="addres" Margin="10, 3, 0, 0" Text="Коммуникация" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
+                                    </Grid>
+                                </Frame>
+                                <Frame Margin="10, 10, 10, 10" HeightRequest="30" CornerRadius="10">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Image Source="book.png"></Image>
+                                        <ImageButton Source="gitlab.png" Margin="0, -10, 0, 0" BackgroundColor="#ffdd2c" CornerRadius="10" HeightRequest="50" WidthRequest="50"></ImageButton>
+                                        <Label x:Name="wok" Margin="10, 3, 0, 0" Text="Приём проектов" TextColor="Black" FontSize="Subtitle" FontAttributes="Bold"  Grid.Column="1"></Label>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </Frame>
+                        <Frame x:Name="framegl2" HasShadow="False" IsVisible="False" CornerRadius="20">
+                            <StackLayout>
+                                <Label Margin="0, 0, 0, 0" Text="Интересное" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                                <Label Margin="20, 0, 0, 0" Text="IT-компания Оджетто" FontSize="Subtitle"></Label>
+                                <Label Margin="0, 0, 0, 0" Text="Фактический адрес" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                                <Label Margin="20, 0, 0, 0" Text="Г. Таганрог, ул. Петровская 87Б, ТЦ Андреевский" FontSize="Subtitle"></Label>
+                                <Label Margin="20, 0, 0, 0" Text="Г. Ростов-на-Дону, ул. Нижнебульварная 6, БЦ 5 Морей" FontSize="Subtitle"></Label>
+                                <Label Margin="0, 0, 0, 0" Text="ИНН" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                                <Label Margin="20, 0, 0, 0" Text="6154556624" FontSize="Subtitle"></Label>
+                                <Label Margin="0, 0, 0, 0" Text="ОГРН" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+                                <Label Margin="20, 0, 0, 0" Text="1086154006245" FontSize="Subtitle"></Label>
+                            </StackLayout>
+                        </Frame>
+                        <Frame x:Name="framegl3" HasShadow="False" IsVisible="False" CornerRadius="20">
+                            <StackLayout>
+                                <Grid Margin="0, 10, 0, 0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Frame Grid.Column="0" BackgroundColor="#ffdd2c" CornerRadius="100" HasShadow="False">
+                                        <Label Text="1" FontSize="Title" Margin="-7, -10, -7, -7" FontAttributes="Bold" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"></Label>
+                                    </Frame>
+                                    <Label Grid.Column="1" Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Жёлтый – самый светлый и самый светящийся цвет спектра."></Label>
+                                </Grid>
+                                <Grid Margin="0, 20, 0, 0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Frame Grid.Column="0" BackgroundColor="#ffdd2c" CornerRadius="100" HasShadow="False">
+                                        <Label Text="2" FontSize="Title" Margin="-7, -10, -7, -7" FontAttributes="Bold" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"></Label>
+                                    </Frame>
+                                    <Label Grid.Column="1" Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Жёлтый цвет стимулирует умственные способности и активизирует работу левого полушария."></Label>
+                                </Grid>
+                                <Grid Margin="0, 20, 0, 10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Frame Grid.Column="0" BackgroundColor="#ffdd2c" CornerRadius="100" HasShadow="False">
+                                        <Label Text="3" FontSize="Title" Margin="-7, -10, -7, -7" FontAttributes="Bold" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"></Label>
+                                    </Frame>
+                                    <Label Grid.Column="1" Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Coldplay добились всемирной известности с их 2000 синглом «Yellow». Это песня, которая связывает вещи, которые певец видит с желтым цветом."></Label>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                   
+                    
                 </StackLayout>
             </ScrollView>
         </StackLayout>
@@ -357,8 +417,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <ImageButton CornerRadius="50" Grid.Column="0" BackgroundColor="#ffdd2c"></ImageButton>
-                <Label x:Name="avaimag" VerticalOptions="Center" Text="Алина Гельдаш" FontSize="Large" FontAttributes="Bold" TextColor="Black" Grid.Column="1"></Label>
+                <ImageButton CornerRadius="50" Source="alina.png" Grid.Column="0" BackgroundColor="#ffdd2c" Aspect="AspectFill"></ImageButton>
+                <Label x:Name="avaimag" VerticalOptions="Center" Text="Алина" FontSize="Large" FontAttributes="Bold" TextColor="Black" Grid.Column="1"></Label>
             </Grid>
             <Label Margin="0, 20, 0, 0" Text="Данные" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
             <Frame Margin="10" HeightRequest="30" CornerRadius="10">

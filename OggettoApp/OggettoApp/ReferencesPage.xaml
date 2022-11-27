@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OggettoApp.ReferencesPage">
+    <StackLayout>
+        <Label Text="Справки" TextColor="Black" FontSize="24" Padding="20, 42, 0, 0" FontAttributes="Bold"/>
+
+        <Button 
+            Text="Выбрать справку"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            BackgroundColor="#ffdd2c"
+            Margin="0, 108, 0, 0"
+            WidthRequest="320"
+            HeightRequest="64"
+            CornerRadius="20"
+            TextTransform="None"
+            FontSize="Title"
+            />
+        <Button 
+            Text="Запросить"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            BackgroundColor="#ffdd2c"
+            Margin="0, 402, 0, 0"
+            WidthRequest="177"
+            HeightRequest="56"
+            CornerRadius="20"
+            TextTransform="None"
+            FontSize="Title"
+            />
+
+    </StackLayout>
+</ContentPage>

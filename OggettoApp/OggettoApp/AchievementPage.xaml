@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OggettoApp.AchievementPage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView Margin="20">
+        <StackLayout>
+            <Label Margin="0, 20, 0, 0" Text="Достижения" FontSize="Large" FontAttributes="Bold" TextColor="Black"></Label>
+            <Frame HeightRequest="70" CornerRadius="20" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="btn1" Source="clock.png" Margin="-5" Grid.Column="0" CornerRadius="10"></ImageButton>
+                    <Grid Margin="20, 0, 0, 0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="10+" FontSize="15" FontAttributes="Bold" TextColor="Black" Grid.Row="0"></Label>
+                        <Label Text="Верно угаданы 10 участников" FontSize="15" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="70" CornerRadius="20" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="btn2" Source="clock.png" Margin="-5" Grid.Column="0" CornerRadius="10"></ImageButton>
+                    <Grid Margin="20, 0, 0, 0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="50+" FontSize="15" FontAttributes="Bold" TextColor="Black" Grid.Row="0"></Label>
+                        <Label Text="Верно угаданы 50 участников" FontSize="15" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="70" CornerRadius="20" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="btn3" Source="clock.png" Margin="-5" Grid.Column="0" CornerRadius="10"></ImageButton>
+                    <Grid Margin="20, 0, 0, 0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="100+" FontSize="15" FontAttributes="Bold" TextColor="Black" Grid.Row="0"></Label>
+                        <Label Text="Верно угаданы 100 участников" FontSize="15" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="70" CornerRadius="20" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="btn4" Source="clock.png" Margin="-5" Grid.Column="0" CornerRadius="10"></ImageButton>
+                    <Grid Margin="20, 0, 0, 0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Taganrog is mine!" FontSize="15" FontAttributes="Bold" TextColor="Black" Grid.Row="0"></Label>
+                        <Label Text="Запомнили всех сотрудников офиса в Таганроге" FontSize="15" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="70" CornerRadius="20" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="btn5" Source="clock.png" Margin="-5" Grid.Column="0" CornerRadius="10"></ImageButton>
+                    <Grid Margin="20, 0, 0, 0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Rostov is mine!" FontSize="15" FontAttributes="Bold" TextColor="Black" Grid.Row="0"></Label>
+                        <Label Text="Запомнили всех сотрудников офиса в Ростове" FontSize="15" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="70" CornerRadius="20" HasShadow="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="btn6" Source="clock.png" Margin="-5" Grid.Column="0" CornerRadius="10"></ImageButton>
+                    <Grid Margin="20, 0, 0, 0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="All in! And take your toke!" FontSize="15" FontAttributes="Bold" TextColor="Black" Grid.Row="0"></Label>
+                        <Label Text="Запомнили всех! Вы победитель!" FontSize="15" Grid.Row="1"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

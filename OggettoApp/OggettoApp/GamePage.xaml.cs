@@ -32,9 +32,9 @@ namespace OggettoApp
             questions.Add(new question() { image = "people5.png", var1 = "Алексей Пажитнов - Разработчик на C++", var2 = "Святослав Пестов - Системный Администратор", var3 = "Никита Александров - Linux-Адмнистратор", var4 = "Аркадий Сысоев - Тех-лид", answer = 2 });
             questions.Add(new question() { image = "people6.png", var1 = "Валентин Скляров - Архитектор VR", var2 = "Сергей Дроздов - iOS-разработчик", var3 = "Владимир Степанов - Android-разработчик", var4 = "Артём Шалыто - Game-дизайнер", answer = 3 });
             questions.Add(new question() { image = "people7.png", var1 = "Алина Щепкина - Frontend-разработчик", var2 = "Ярослава Нефедова - Web-дизайнер", var3 = "Лия Фомина - Корпоративный архитектор", var4 = "Александра Разборова - Архитектор БД", answer = 2 });
-            questions.Add(new question() { image = "people8.png", var1 = "Франция", var2 = "Италия", var3 = "Испания", var4 = "", answer = 1 });
-            questions.Add(new question() { image = "people9.png", var1 = "Канада", var2 = "Австралия", var3 = "Малазия", var4 = "", answer = 2 });
-            questions.Add(new question() { image = "people10.png", var1 = "Португалия", var2 = "Ирландия", var3 = "Великобритания", var4 = "", answer = 3 });
+            questions.Add(new question() { image = "people8.png", var1 = "Алексей Пажитнов - Разработчик на C++", var2 = "Святослав Пестов - Системный Администратор", var3 = "Никита Александров - Linux-Адмнистратор", var4 = "Аркадий Сысоев - Тех-лид", answer = 2 });
+            questions.Add(new question() { image = "people9.png", var1 = "Валентин Скляров - Архитектор VR", var2 = "Сергей Дроздов - iOS-разработчик", var3 = "Владимир Степанов - Android-разработчик", var4 = "Артём Шалыто - Game-дизайнер", answer = 3 });
+            questions.Add(new question() { image = "people10.png", var1 = "Алина Щепкина - Frontend-разработчик", var2 = "Ярослава Нефедова - Web-дизайнер", var3 = "Лия Фомина - Корпоративный архитектор", var4 = "Александра Разборова - Архитектор БД", answer = 2 });
 
             return questions;
         }
@@ -69,10 +69,13 @@ namespace OggettoApp
 
         void showRes(int countExcelentQuestionAnswers, int allCount, int buttonP)
         {
-            questImage.Source = "answerCheck.png";
+            questImage.Source = "pokercards.png";
             button1.Text = $"верно {countExcelentQuestionAnswers} из {allCount}";
             //button2.Clicked += (s, e) => Navigation.PushAsync(new CountryLevelSecondPage());
+            result.Text = "Результат";
             button3.IsVisible = false;
+            button4.IsVisible = false;
+            button2.IsVisible = false;
         }
         public GamePage()
         {
@@ -126,7 +129,6 @@ namespace OggettoApp
                         showRes(countExcelentQuestionAnswers, countAllQuestions, 1);
                     }
                 }
-
             };
 
             button3.Clicked += (sender, e) =>
